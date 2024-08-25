@@ -1,0 +1,6 @@
+Diff b/w instance variable and class variable
+
+Instance variable are not shared by object. Each object has its own copy of instance attribute
+
+Class variable are shared across all the instances
+

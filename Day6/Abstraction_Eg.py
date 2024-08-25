@@ -16,3 +16,14 @@ class Tesla(car):
 
 B = BMW()
 B.horn()
+
+'''
+
+parent
+    marriage - abc (6 months)
+    gift - house
+
+child
+    marriage -xyz (
+
+'''
