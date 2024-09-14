@@ -31,4 +31,4 @@ driver.find_element(By.XPATH,'//a[@data-test="shopping-cart-link"]').click()
 
 
 
-time.sleep(10)
+time.sleep(50)
