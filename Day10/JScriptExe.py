@@ -15,5 +15,5 @@ driver.get("https://www.snapdeal.com/")
 driver.maximize_window()
 driver.implicitly_wait(30)
 #
-
-driver.execute_script("arguments[0].click()",driver.find_element(By.XPATH,"//span[text()='Wall Decor']"))
+driver.find_element(By.XPATH,"//span[text()='Wall Decor']").click()
+#driver.execute_script("arguments[0].click()",driver.find_element(By.XPATH,"//span[text()='Wall Decor']"))
