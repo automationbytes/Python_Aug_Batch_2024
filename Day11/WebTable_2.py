@@ -35,4 +35,9 @@ for i in range(1, rowsize):
     # Check if the second <td> exists
     if product_name_elements:
         productName = product_name_elements[0].text
-        print(productName)
+        #print(productName)
+        if productName == "Pop star (1pcs)":
+            driver.find_element(By.XPATH,
+                                f'//table[@class="estimate-table"]//tr[{i}]//td[6]//input[@type="text"]').clear()
+
+            driver.find_element(By.XPATH,f'//table[@class="estimate-table"]//tr[{i}]//td[6]//input[@type="text"]').send_keys("5")
