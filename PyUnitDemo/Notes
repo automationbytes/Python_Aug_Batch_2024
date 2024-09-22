@@ -1,0 +1,9 @@
+PyUnit = Unit Testing Framework
+Inbuild Framework
+
+4 Concepts
+----------
+Test Fixtures - (Hooks/Annotations) - Before/After
+Test Cases - Individual Test Cases
+Test Suite - Collection of Test cases
+Test Runner - Provide the reporting
