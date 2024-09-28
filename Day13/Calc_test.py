@@ -1,4 +1,4 @@
-
+import pytest
 def test_calc_add():
     a = 10
     b = 5
@@ -13,6 +13,7 @@ def test_calc_sub():
     print("Difference of the numbers:" ,a,"-",b ,"=", a-b)
     assert a-b == 5
 
+@pytest.mark.sanity
 def test_mul_calc():
     a = 10
     b = 5
@@ -25,8 +26,8 @@ def test_div():
     print("Difference of the numbers:" ,a,"/",b ,"=", a/b)
     assert a//b == 5
 
-
-def test_sum():
+@pytest.mark.sanity
+def test_sum_ab():
     a = 100
     b = 50
     print("Sum of the numbers:" ,a,"+",b ,"=", a+b)

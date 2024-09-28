@@ -51,3 +51,11 @@ To run our test cases
 --------------------
 
 pytest filename.py -v -s
+
+subset
+pytest -k subsetvalue -v -s
+
+
+===================================================
+
+Markers for grouping the test cases
