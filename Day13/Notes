@@ -1,0 +1,53 @@
+Pytest - Testing Framework
+
+Write test cases in simpler and scalable format
+
+Features:
+Simple syntax
+Fixtures - (Setup - Before Teardown (yield) - After
+Parameterization - Run the same test cases with multiple inputs
+Reporting -
+Flexible and Extensible
+
+Advantages of Pytest:
+
+Free and Opensource
+Simple syntax
+Pytest can offer Parallel Execution, which reduces the execution time
+Skip Test
+Assertions
+Group the test cases
+Reporting
+
+To Download Pytest
+-----------------
+pip install pytest
+
+pytest -h -> Help Menu
+pytest -V -> Version
+
+==================================================================================
+filename
+
+test_*.py or *_test.py (automatically identified)
+=======================
+test methods
+test*
+
+===========================================
+To run the test cases
+
+pytest
+
+pytest -v (verbose ) gives information about the testcases
+
+pytest -v -s (print any of the print statements values)
+or
+pytest -v --capture=no
+
+-----------------------------------------
+
+To run our test cases
+--------------------
+
+pytest filename.py -v -s
