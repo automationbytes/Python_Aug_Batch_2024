@@ -59,3 +59,44 @@ pytest -k subsetvalue -v -s
 ===================================================
 
 Markers for grouping the test cases
+
+----------------------------------------
+
+Skip - to skip the tes tcases
+Skip if- to skip the test cases on specific condition
+
+xfail - excepted failure
+
+========================================
+Stop the execution after the maxi failure
+ pytest -v --maxfail 5
+
+
+----------------------------------------------
+
+parallel testing
+
+pytest-xdist - plugin official plugin
+
+pytest -n 3 #3 threads
+
+========================================
+dependancy
+pytest-dependancy - not official
+
+html
+----
+pytest-html
+
+pytest --html=report.html -v
+
+xml reporting (no need of any plugin)
+ pytest --junitxml=report.xml -v -s
+
+
+=========================================
+
+json report
+-----------
+
+pytest-json plugin required

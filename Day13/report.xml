@@ -1,0 +1,68 @@
+<?xml version="1.0" enco        /failure></testcase><testcase classname="Greater_Lesser_test" name="test_greater" time="0.001"><failure message="assert 5 == True">def test_greater():
+        a = 10
+        b = 5
+        print("A is bigger number:" ,a,",",b ,"=", a&gt;b)
+&gt;       assert a&gt;b == True
+E       assert 5 == True
+
+Greater_Lesser_test.py:7: AssertionError</failure></testcase><testcase classname="Greater_Lesser_test" name="test_lesser" time="0.001"><failure message="assert 5 == True">@pytest.mark.sanity
+    def test_lesser():
+        a = 10
+        b = 5
+        print("A is smaller number:" ,a,",",b ,"=", a&lt;b)
+&gt;       assert a&gt;b == True
+E       assert 5 == True
+
+Greater_Lesser_test.py:14: AssertionError</failure></testcase><testcase classname="dependancy_test" name="test_login" time="0.001" /><testcase classname="dependancy_test" name="test_homePage" time="0.000"><skipped type="pytest.skip" message="test_homePage depends on test_login">C:\Users\vigne\PycharmProjects\pythonProject1\.venv\Lib\site-packages\pytest_dependency.py:101: test_homePage depends on test_login</skipped></testcase><testcase classname="dependancy_test" name="test_Logout" time="0.001"><skipped type="pytest.skip" message="test_Logout depends on test_login">C:\Users\vigne\PycharmProjects\pythonProject1\.venv\Lib\site-packages\pytest_dependency.py:101: test_Logout depends on test_login</skipped></testcase><testcase classname="parameterization_eg2_test" name="test_sumofnumbers[2-3-5]" time="0.001" /><testcase classname="parameterization_eg2_test" name="test_sumofnumbers[10-5-15]" time="0.001" /><testcase classname="parameterization_eg2_test" name="test_sumofnumbers[5-20-25]" time="0.001" /><testcase classname="parameterization_eg2_test" name="test_sumofnumbers[-1-1-0]" time="0.001" /><testcase classname="parameterization_eg2_test" name="test_sumofnumbers[10-4-15]" time="0.001"><failure message="assert (10 + 4) == 15">a = 10, b = 4, expectedsum = 15
+
+    @pytest.mark.parametrize("a,b,expectedsum",inputvalues())
+    def test_sumofnumbers(a,b,expectedsum):
+&gt;       assert a+b == expectedsum
+E       assert (10 + 4) == 15
+
+parameterization_eg2_test.py:16: AssertionError</failure></testcase><testcase classname="parameterization_test" name="test_sumofnumbers[2-3-5]" time="0.001" /><testcase classname="parameterization_test" name="test_sumofnumbers[10-5-15]" time="0.001" /><testcase classname="parameterization_test" name="test_sumofnumbers[5-20-25]" time="0.001" /><testcase classname="parameterization_test" name="test_sumofnumbers[-1-1-0]" time="0.000" /><testcase classname="parameterization_test" name="test_sumofnumbers[10-4-15]" time="0.001"><failure message="assert (10 + 4) == 15">a = 10, b = 4, expectedsum = 15
+
+    @pytest.mark.parametrize("a,b,expectedsum",[
+        (2,3,5),
+        (10,5,15),
+        (5,20,25),
+        (-1,1,0),
+        (10,4,15)
+    ])
+    def test_sumofnumbers(a,b,expectedsum):
+&gt;       assert a+b == expectedsum
+E       assert (10 + 4) == 15
+
+parameterization_test.py:12: AssertionError</failure></testcase><testcase classname="parameterize_dict_test" name="test_sumofnumbers[input_values0]" time="0.001" /><testcase classname="parameterize_dict_test" name="test_sumofnumbers[input_values1]" time="0.001" /><testcase classname="parameterize_dict_test" name="test_sumofnumbers[input_values2]" time="0.000" /><testcase classname="parameterize_dict_test" name="test_sumofnumbers[input_values3]" time="0.001"><failure message="assert (20 + 3) == 5">input_values = {'a': 20, 'b': 3, 'expectedsum': 5}
+
+    @pytest.mark.parametrize("input_values",[
+        {"a":2,"b":3,"expectedsum":5},
+        {"a":12,"b":13,"expectedsum":25},
+        {"a":20,"b":30,"expectedsum":50},
+        {"a":20,"b":3,"expectedsum":5},
+    
+    ])
+    def test_sumofnumbers(input_values):
+    
+        a = input_values["a"]
+        b = input_values["b"]
+        expectedsum = input_values["expectedsum"]
+    
+&gt;       assert a+b == expectedsum
+E       assert (20 + 3) == 5
+
+parameterize_dict_test.py:17: AssertionError</failure></testcase><testcase classname="parameterize_tuple_test" name="test_sumofnumbers[input_values0-5]" time="0.001" /><testcase classname="parameterize_tuple_test" name="test_sumofnumbers[input_values1-15]" time="0.001" /><testcase classname="parameterize_tuple_test" name="test_sumofnumbers[input_values2-25]" time="0.001" /><testcase classname="parameterize_tuple_test" name="test_sumofnumbers[input_values3-0]" time="0.001" /><testcase classname="parameterize_tuple_test" name="test_sumofnumbers[input_values4-15]" time="0.001"><failure message="assert (10 + 4) == 15">input_values = (10, 4), expectedsum = 15
+
+    @pytest.mark.parametrize("input_values,expectedsum",[
+        ((2,3),5),
+        ((10,5),15),
+        ((5,20),25),
+        ((-1,1),0),
+        ((10,4),15)
+    ])
+    def test_sumofnumbers(input_values,expectedsum):
+        a,b = input_values
+&gt;       assert a+b == expectedsum
+E       assert (10 + 4) == 15
+
+parameterize_tuple_test.py:13: AssertionError</failure></testcase><testcase classname="skip_xfail_test" name="test_calc_add" time="0.001" /><testcase classname="skip_xfail_test" name="test_calc_sub" time="0.001" /><testcase classname="skip_xfail_test" name="test_mul_calc" time="0.000"><skipped type="pytest.skip" message="unconditional skip">C:\Users\vigne\PycharmProjects\pythonProject1\Day13\skip_xfail_test.py:16: unconditional skip</skipped></testcase><testcase classname="skip_xfail_test" name="test_div" time="0.000"><skipped type="pytest.skip" message="Condtion">C:\Users\vigne\PycharmProjects\pythonProject1\Day13\skip_xfail_test.py:25: Condtion</skipped></testcase><testcase classname="skip_xfail_test" name="test_sum_ab" time="0.001" /></testsuite></testsuites>

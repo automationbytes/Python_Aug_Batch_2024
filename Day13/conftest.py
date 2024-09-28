@@ -5,7 +5,6 @@ import pytest
 def pytest_configure(config):
     config.addinivalue_line("markers", "sanity")
 
-
 @pytest.fixture()
 def input_a():
     return 10

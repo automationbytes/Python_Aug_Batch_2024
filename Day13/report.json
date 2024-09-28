@@ -1,0 +1,768 @@
+{
+  "report": {
+    "environment": {
+      "Python": "3.11.9",
+      "Platform": "Windows-10-10.0.22631-SP0"
+    },
+    "tests": [
+      {
+        "name": "Calc_test.py::test_calc_add",
+        "duration": 0.001627800171263516,
+        "run_index": 0,
+        "setup": {
+          "name": "setup",
+          "duration": 0.00030010007321834564,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.0007464999798685312,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00028110004495829344,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "Calc_test.py::test_calc_sub",
+        "duration": 0.0006844000890851021,
+        "run_index": 1,
+        "setup": {
+          "name": "setup",
+          "duration": 0.00016160006634891033,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.00026030000299215317,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00010089995339512825,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "Calc_test.py::test_mul_calc",
+        "duration": 0.0005558000411838293,
+        "run_index": 2,
+        "setup": {
+          "name": "setup",
+          "duration": 0.00012530002277344465,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.00021119997836649418,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 9.400001727044582e-05,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "Calc_test.py::test_div",
+        "duration": 0.0008327000541612506,
+        "run_index": 3,
+        "setup": {
+          "name": "setup",
+          "duration": 0.00012790004257112741,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.00046929996460676193,
+          "outcome": "failed",
+          "longrepr": "def test_div():\n        a = 10\n        b = 5\n        print(\"Difference of the numbers:\" ,a,\"/\",b ,\"=\", a/b)\n>       assert a//b == 5\nE       assert (10 // 5) == 5\n\nCalc_test.py:27: AssertionError"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00010760000441223383,
+          "outcome": "passed"
+        },
+        "outcome": "failed"
+      },
+      {
+        "name": "Calc_test.py::test_sum_ab",
+        "duration": 0.00140660023316741,
+        "run_index": 4,
+        "setup": {
+          "name": "setup",
+          "duration": 0.0002549000782892108,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.0007554000476375222,
+          "outcome": "failed",
+          "longrepr": "@pytest.mark.sanity\n    def test_sum_ab():\n        a = 100\n        b = 50\n        print(\"Sum of the numbers:\" ,a,\"+\",b ,\"=\", a+b)\n>       assert a+b == 15\nE       assert (100 + 50) == 15\n\nCalc_test.py:34: AssertionError"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00014140002895146608,
+          "outcome": "passed"
+        },
+        "outcome": "failed"
+      },
+      {
+        "name": "ExampleConf_test.py::test_conf_add",
+        "duration": 0.0012327998410910368,
+        "run_index": 5,
+        "setup": {
+          "name": "setup",
+          "duration": 0.0003931999672204256,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.000143399927765131,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.0003029999788850546,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "First_test.py::test_sum",
+        "duration": 0.001151499804109335,
+        "run_index": 6,
+        "setup": {
+          "name": "setup",
+          "duration": 0.00030599988531321287,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.0004482000367715955,
+          "outcome": "failed",
+          "longrepr": "@pytest.mark.sanity\n    def test_sum():\n        a = 10\n        b = 5\n        print(\"Sum of the numbers:\" ,a,\"+\",b ,\"=\", a+b)\n>       assert a+b == 150\nE       assert (10 + 5) == 150\n\nFirst_test.py:9: AssertionError"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 9.129999671131372e-05,
+          "outcome": "passed"
+        },
+        "outcome": "failed"
+      },
+      {
+        "name": "Greater_Lesser_test.py::test_greater",
+        "duration": 0.0005887001752853394,
+        "run_index": 7,
+        "setup": {
+          "name": "setup",
+          "duration": 0.0001292000524699688,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.00023380003403872252,
+          "outcome": "failed",
+          "longrepr": "def test_greater():\n        a = 10\n        b = 5\n        print(\"A is bigger number:\" ,a,\",\",b ,\"=\", a>b)\n>       assert a>b == True\nE       assert 5 == True\n\nGreater_Lesser_test.py:7: AssertionError"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 9.650003630667925e-05,
+          "outcome": "passed"
+        },
+        "outcome": "failed"
+      },
+      {
+        "name": "Greater_Lesser_test.py::test_lesser",
+        "duration": 0.0006331000477075577,
+        "run_index": 8,
+        "setup": {
+          "name": "setup",
+          "duration": 0.00010429997928440571,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.0002699000760912895,
+          "outcome": "failed",
+          "longrepr": "@pytest.mark.sanity\n    def test_lesser():\n        a = 10\n        b = 5\n        print(\"A is smaller number:\" ,a,\",\",b ,\"=\", a<b)\n>       assert a>b == True\nE       assert 5 == True\n\nGreater_Lesser_test.py:14: AssertionError"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00015460001304745674,
+          "outcome": "passed"
+        },
+        "outcome": "failed"
+      },
+      {
+        "name": "dependancy_test.py::test_login",
+        "duration": 0.0007561000529676676,
+        "run_index": 9,
+        "setup": {
+          "name": "setup",
+          "duration": 0.0002495000371709466,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.00013609998859465122,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00012099999003112316,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "dependancy_test.py::test_homePage",
+        "duration": 0.0018110000528395176,
+        "run_index": 10,
+        "setup": {
+          "name": "setup",
+          "duration": 0.0005674000130966306,
+          "outcome": "skipped",
+          "longrepr": "('C:\\\\Users\\\\vigne\\\\PycharmProjects\\\\pythonProject1\\\\.venv\\\\Lib\\\\site-packages\\\\pytest_dependency.py', 101, 'Skipped: test_homePage depends on test_login')"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.0006762000266462564,
+          "outcome": "passed"
+        },
+        "outcome": "skipped"
+      },
+      {
+        "name": "dependancy_test.py::test_Logout",
+        "duration": 0.0004354999400675297,
+        "run_index": 11,
+        "setup": {
+          "name": "setup",
+          "duration": 0.0001639999682083726,
+          "outcome": "skipped",
+          "longrepr": "('C:\\\\Users\\\\vigne\\\\PycharmProjects\\\\pythonProject1\\\\.venv\\\\Lib\\\\site-packages\\\\pytest_dependency.py', 101, 'Skipped: test_Logout depends on test_login')"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00010750000365078449,
+          "outcome": "passed"
+        },
+        "outcome": "skipped"
+      },
+      {
+        "name": "parameterization_eg2_test.py::test_sumofnumbers[2-3-5]",
+        "duration": 0.0011110001942142844,
+        "run_index": 12,
+        "setup": {
+          "name": "setup",
+          "duration": 0.0003787000896409154,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.00011769996490329504,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.0002359000500291586,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "parameterization_eg2_test.py::test_sumofnumbers[10-5-15]",
+        "duration": 0.0010451000416651368,
+        "run_index": 13,
+        "setup": {
+          "name": "setup",
+          "duration": 0.0003367000026628375,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.0001919000642374158,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.000179799972102046,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "parameterization_eg2_test.py::test_sumofnumbers[5-20-25]",
+        "duration": 0.0011881999671459198,
+        "run_index": 14,
+        "setup": {
+          "name": "setup",
+          "duration": 0.0004026000387966633,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.00016149994917213917,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00022149994038045406,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "parameterization_eg2_test.py::test_sumofnumbers[-1-1-0]",
+        "duration": 0.00085390021558851,
+        "run_index": 15,
+        "setup": {
+          "name": "setup",
+          "duration": 0.0002962000435218215,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.00011190003715455532,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00014960009139031172,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "parameterization_eg2_test.py::test_sumofnumbers[10-4-15]",
+        "duration": 0.0007900000782683492,
+        "run_index": 16,
+        "setup": {
+          "name": "setup",
+          "duration": 0.00021660001948475838,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.0002562999725341797,
+          "outcome": "failed",
+          "longrepr": "a = 10, b = 4, expectedsum = 15\n\n    @pytest.mark.parametrize(\"a,b,expectedsum\",inputvalues())\n    def test_sumofnumbers(a,b,expectedsum):\n>       assert a+b == expectedsum\nE       assert (10 + 4) == 15\n\nparameterization_eg2_test.py:16: AssertionError"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00010050006676465273,
+          "outcome": "passed"
+        },
+        "outcome": "failed"
+      },
+      {
+        "name": "parameterization_test.py::test_sumofnumbers[2-3-5]",
+        "duration": 0.0005461000837385654,
+        "run_index": 17,
+        "setup": {
+          "name": "setup",
+          "duration": 0.00019910000264644623,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 6.420002318918705e-05,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 8.370005525648594e-05,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "parameterization_test.py::test_sumofnumbers[10-5-15]",
+        "duration": 0.0010701999999582767,
+        "run_index": 18,
+        "setup": {
+          "name": "setup",
+          "duration": 0.0004099999787285924,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.00013170007150620222,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00011849997099488974,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "parameterization_test.py::test_sumofnumbers[5-20-25]",
+        "duration": 0.000592100084759295,
+        "run_index": 19,
+        "setup": {
+          "name": "setup",
+          "duration": 0.000175400055013597,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.00010539998766034842,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00013589998707175255,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "parameterization_test.py::test_sumofnumbers[-1-1-0]",
+        "duration": 0.0011292999843135476,
+        "run_index": 20,
+        "setup": {
+          "name": "setup",
+          "duration": 0.00028579996433109045,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.0004062000662088394,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.0001514999894425273,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "parameterization_test.py::test_sumofnumbers[10-4-15]",
+        "duration": 0.001257999916560948,
+        "run_index": 21,
+        "setup": {
+          "name": "setup",
+          "duration": 0.0003771999618038535,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.00034829997457563877,
+          "outcome": "failed",
+          "longrepr": "a = 10, b = 4, expectedsum = 15\n\n    @pytest.mark.parametrize(\"a,b,expectedsum\",[\n        (2,3,5),\n        (10,5,15),\n        (5,20,25),\n        (-1,1,0),\n        (10,4,15)\n    ])\n    def test_sumofnumbers(a,b,expectedsum):\n>       assert a+b == expectedsum\nE       assert (10 + 4) == 15\n\nparameterization_test.py:12: AssertionError"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.0001553000183776021,
+          "outcome": "passed"
+        },
+        "outcome": "failed"
+      },
+      {
+        "name": "parameterize_dict_test.py::test_sumofnumbers[input_values0]",
+        "duration": 0.0013709001941606402,
+        "run_index": 22,
+        "setup": {
+          "name": "setup",
+          "duration": 0.0003448000643402338,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.0004062000662088394,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.0002750999992713332,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "parameterize_dict_test.py::test_sumofnumbers[input_values1]",
+        "duration": 0.0007659997791051865,
+        "run_index": 23,
+        "setup": {
+          "name": "setup",
+          "duration": 0.00018779991660267115,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.0002807000419124961,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00010969990398734808,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "parameterize_dict_test.py::test_sumofnumbers[input_values2]",
+        "duration": 0.0006600999040529132,
+        "run_index": 24,
+        "setup": {
+          "name": "setup",
+          "duration": 0.0001509999856352806,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.00023669993970543146,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00012139999307692051,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "parameterize_dict_test.py::test_sumofnumbers[input_values3]",
+        "duration": 0.0019175000488758087,
+        "run_index": 25,
+        "setup": {
+          "name": "setup",
+          "duration": 0.000381499994546175,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.0008231999818235636,
+          "outcome": "failed",
+          "longrepr": "input_values = {'a': 20, 'b': 3, 'expectedsum': 5}\n\n    @pytest.mark.parametrize(\"input_values\",[\n        {\"a\":2,\"b\":3,\"expectedsum\":5},\n        {\"a\":12,\"b\":13,\"expectedsum\":25},\n        {\"a\":20,\"b\":30,\"expectedsum\":50},\n        {\"a\":20,\"b\":3,\"expectedsum\":5},\n    \n    ])\n    def test_sumofnumbers(input_values):\n    \n        a = input_values[\"a\"]\n        b = input_values[\"b\"]\n        expectedsum = input_values[\"expectedsum\"]\n    \n>       assert a+b == expectedsum\nE       assert (20 + 3) == 5\n\nparameterize_dict_test.py:17: AssertionError"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00033130007795989513,
+          "outcome": "passed"
+        },
+        "outcome": "failed"
+      },
+      {
+        "name": "parameterize_tuple_test.py::test_sumofnumbers[input_values0-5]",
+        "duration": 0.0010478999465703964,
+        "run_index": 26,
+        "setup": {
+          "name": "setup",
+          "duration": 0.000372899929061532,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.00012620002962648869,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.0001759000588208437,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "parameterize_tuple_test.py::test_sumofnumbers[input_values1-15]",
+        "duration": 0.0007826000219210982,
+        "run_index": 27,
+        "setup": {
+          "name": "setup",
+          "duration": 0.00026190001517534256,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.00011639995500445366,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00014240003656595945,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "parameterize_tuple_test.py::test_sumofnumbers[input_values2-25]",
+        "duration": 0.0017167000332847238,
+        "run_index": 28,
+        "setup": {
+          "name": "setup",
+          "duration": 0.0007209000177681446,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.00013729999773204327,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00013760000001639128,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "parameterize_tuple_test.py::test_sumofnumbers[input_values3-0]",
+        "duration": 0.0007252999348565936,
+        "run_index": 29,
+        "setup": {
+          "name": "setup",
+          "duration": 0.00025679997634142637,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 8.400005754083395e-05,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00012769992463290691,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "parameterize_tuple_test.py::test_sumofnumbers[input_values4-15]",
+        "duration": 0.0006935999263077974,
+        "run_index": 30,
+        "setup": {
+          "name": "setup",
+          "duration": 0.0001990000018849969,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.00018749991431832314,
+          "outcome": "failed",
+          "longrepr": "input_values = (10, 4), expectedsum = 15\n\n    @pytest.mark.parametrize(\"input_values,expectedsum\",[\n        ((2,3),5),\n        ((10,5),15),\n        ((5,20),25),\n        ((-1,1),0),\n        ((10,4),15)\n    ])\n    def test_sumofnumbers(input_values,expectedsum):\n        a,b = input_values\n>       assert a+b == expectedsum\nE       assert (10 + 4) == 15\n\nparameterize_tuple_test.py:13: AssertionError"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00010810000821948051,
+          "outcome": "passed"
+        },
+        "outcome": "failed"
+      },
+      {
+        "name": "skip_xfail_test.py::test_calc_add",
+        "duration": 0.0009436000837013125,
+        "run_index": 31,
+        "setup": {
+          "name": "setup",
+          "duration": 0.00025400007143616676,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.00030700000934302807,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00012859993148595095,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "skip_xfail_test.py::test_calc_sub",
+        "duration": 0.0006267998833209276,
+        "run_index": 32,
+        "setup": {
+          "name": "setup",
+          "duration": 0.00014679995365440845,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.00016719999257475138,
+          "outcome": "passed"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00016599998343735933,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      },
+      {
+        "name": "skip_xfail_test.py::test_mul_calc",
+        "duration": 0.0003166000824421644,
+        "run_index": 33,
+        "setup": {
+          "name": "setup",
+          "duration": 0.00010740000288933516,
+          "outcome": "skipped",
+          "longrepr": "('C:\\\\Users\\\\vigne\\\\PycharmProjects\\\\pythonProject1\\\\Day13\\\\skip_xfail_test.py', 16, 'Skipped: unconditional skip')"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00010180007666349411,
+          "outcome": "passed"
+        },
+        "outcome": "skipped"
+      },
+      {
+        "name": "skip_xfail_test.py::test_div",
+        "duration": 0.00041270023211836815,
+        "run_index": 34,
+        "setup": {
+          "name": "setup",
+          "duration": 0.00013090006541460752,
+          "outcome": "skipped",
+          "longrepr": "('C:\\\\Users\\\\vigne\\\\PycharmProjects\\\\pythonProject1\\\\Day13\\\\skip_xfail_test.py', 25, 'Skipped: Condtion')"
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.0001509001012891531,
+          "outcome": "passed"
+        },
+        "outcome": "skipped"
+      },
+      {
+        "name": "skip_xfail_test.py::test_sum_ab",
+        "duration": 0.0006951999384909868,
+        "run_index": 35,
+        "setup": {
+          "name": "setup",
+          "duration": 0.0001580999232828617,
+          "outcome": "passed"
+        },
+        "call": {
+          "name": "call",
+          "duration": 0.00023820006754249334,
+          "outcome": "passed",
+          "xfail_reason": ""
+        },
+        "teardown": {
+          "name": "teardown",
+          "duration": 0.00014080002438277006,
+          "outcome": "passed"
+        },
+        "outcome": "passed"
+      }
+    ],
+    "summary": {
+      "passed": 23,
+      "failed": 9,
+      "skipped": 4,
+      "num_tests": 36,
+      "duration": 0.21257662773132324
+    },
+    "created_at": "2024-09-28 21:35:12.068145"
+  }
+}
