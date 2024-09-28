@@ -100,3 +100,10 @@ json report
 -----------
 
 pytest-json plugin required
+
+
+pytest-retry
+-----------
+to retry the failed one
+
+pytest --retries 2
