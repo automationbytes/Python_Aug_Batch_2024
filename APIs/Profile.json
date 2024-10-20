@@ -1,0 +1,11 @@
+{
+  "address": {
+    "city": "New York",
+    "country": "US",
+    "street": "123 Main Street",
+    "zipCode": 12345
+  },
+  "id": 1,
+  "firstName": "Automation",
+  "lastName": "Tester"
+}
